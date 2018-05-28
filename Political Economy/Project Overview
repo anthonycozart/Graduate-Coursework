@@ -1,0 +1,24 @@
+Project Title: Political Commentary by businesses before the 2016 election
+Anthony Cozart 4/16/18
+
+Initial Motivation
+
+During the 2016 election, Trump gave dozens of speeches aiming to win working-class voters by criticizing foreign countries for their trade policies, and by pressuring executives to stop sending factory jobs abroad. (The most visible example of this was his criticism of Indiana air conditioner manufacturer Carrier). As a public policy student, I’ve been interested whether Trump’s campaign and election has caused firms to become more political.
+In my project proposal, I outlined that I wanted to see how firms were discussing business issues being discussed in politics—outsourcing, automation, healthcare, trade tariffs. I sought to explore variation across industry, region, and time in how firms are talking about these political issues. I’d then use this variation to “price” the benefits or costs of executives talking about politics, by examining stock prices before and after a political statement. My four questions were:
+1. Did Trump lead firms to change their comments and political positioning on outsourcing, automation, and robotics?
+2. How does this shift (if any) vary by industry or region?
+3. Has it been temporary, increasing, decreasing, or constant?
+4. What are the financial consequences of these shifts?
+
+Data Sources
+
+Each quarter, executives of publicly-traded companies are legally required to present their financial results, and answer questions about earnings expectations, to investors. These “earning calls” are a rich source of information about firms, and the transcripts are posted to the financial news site  Seeking Alpha . I wrote a Python script to retrieve approximately 20,000 transcripts (for all companies in the S&P500, each quarter, across 10 years). After quickly learning they would rate-limit and reject my requests, I started to write a new script that used Tor to change my IP address. But after trying to get this work for a week, I decided to scale back my ambitions.
+I found approximately 120 transcripts of earnings calls by 30 industrial-sector companies during 2016 on Github.1 The transcripts come from the same source (the website Seeking Alpha), and are in JSON format.
+
+Revised Research Questions
+
+Having just a fraction of the data meant that I can’t answer many of my initial research questions. I’ve revised my first question (about the number of firms talking about politics) and my fourth question (about the financial implications), but have considered new questions and methods. My revised questions are:
+1. What fraction of firms are talking about political issues, and what are these issues?
+2. More generally, what topics are executives talking about before an important election?
+3. How does the relative importance of these topics vary by firms?
+4. How do these topics correspond to changes in stock prices observed after the election?
